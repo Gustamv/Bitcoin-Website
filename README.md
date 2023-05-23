@@ -1,2 +1,2 @@
 # ProjetoFinal_API
-Projeto final da cadeiraAplicações para internet
+Projeto final da cadeira Aplicações para internet
