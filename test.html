@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulário com POP-up</title>
+</head>
+<body>
+  <h1>Formulário</h1>
+  <form>
+    <!-- Seus campos de formulário aqui -->
+    <input type="text" name="nome" placeholder="Nome"><br>
+    <input type="email" name="email" placeholder="E-mail"><br>
+    <textarea name="mensagem" placeholder="Mensagem"></textarea><br>
+    <input type="submit" value="Enviar" onclick="mostrarPopup(event)">
+  </form>
+
+  <!-- Pop-up -->
+  <div id="popup" class="popup">
+    <h2>POP-UP</h2>
+    <p>Obrigado por enviar o formulário!</p>
+    <button id="fechar" onclick="fecharPopup()">Fechar</button>
+  </div>
+</body>
+</html>

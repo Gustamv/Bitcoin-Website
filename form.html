@@ -5,7 +5,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="form.css">
-    <title>Formulario</title>
+    <script src="form.js"></script>
+    <title>Formulário</title>
 </head>
 <body>
   <div class="form">
@@ -14,12 +15,38 @@
         <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br>   
         <input type="email" id="email" name="email" placeholder="Digite seu email"><br>
         <label for="mensagem"></label>
-    <textarea id="mensagem" name="mensagem" rows="1" placeholder="Digite uma mensagem" required></textarea>
+        <textarea id="mensagem" name="mensagem" rows="1" placeholder="Digite uma mensagem" required></textarea>
       
-        <button>Enviar</button>
-      </form>
+        <button id="send">Enviar</button>
+    </form>
   </div>
+
+    <!-- Pop-up -->
+    <div id="popup" class="popup">
+        <p>Seu formulário foi enviado com sucesso!</p>
+        <button id="fechar" onclick="fecharPopup()">Fechar</button>
+    </div>
+    
+    <script>
+        function validarForm() {
+            // Lógica de validação do formulário aqui
+            // ...
+
+            // Exibe o pop-up se o formulário for válido
+            mostrarPopup(event);
+            return false; // Impede o envio do formulário
+        }
+
+        function mostrarPopup(event) {
+            event.preventDefault(); // Impede o envio do formulário
+            var popup = document.getElementById("popup");
+            popup.style.display = "block";
+        }
+
+        function fecharPopup() {
+            var popup = document.getElementById("popup");
+            popup.style.display = "none";
+        }
+    </script>
 </body>
 </html>
-
-

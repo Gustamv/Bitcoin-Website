@@ -142,30 +142,50 @@
     background-color: #d9590e;
   }
   
-  button {
+  #send {
     margin-top: 40px;
-    background: linear-gradient(180deg, #d9590e, #191c29);
+    background: #1c2030d5;
     color: rgba(255, 255, 255, 0.932);
-    border: none;
+    border: 2px solid #e68414;
     font-size: 25px;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 7px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    box-shadow: 2px 2px 10px #fd8718bd;
   }
   
-  button:hover {
+  #send:hover {
+    border: 2px solid #87fc44;
     color: rgb(255, 255, 255);
-    background: linear-gradient(180deg, #d9590e, #191c29cc);
-    transition: background-color 0.3s ease;
-    box-shadow: 3px 3px 15px #fd8718;
+    background: #1c2030d5;
   }
 
-  button:active {
+  #send:active {
+    border: 3px solid #87fc44;
     color: rgb(255, 255, 255);
-    background: linear-gradient(180deg, #53e70fd3, #191c29cc);
-    transition: background-color 0.3s ease;
-    box-shadow: 2px 2px 10px #48c500;
+    background: #1c2030d5;
 
   }
+
+/* Estilo para o pop-up */
+.popup {
+  display: none; /* Inicialmente oculto */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #2c9403;
+  padding: 20px;
+  border: 5px solid #9dff00;
+  border-radius: 10px;
+  
+}
+
+button {
+  margin-top: 40px;
+  color: rgba(133, 17, 17, 0.932);
+  font-size: 25px;
+  padding: 10px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
   
