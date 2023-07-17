@@ -23,30 +23,7 @@
 
     <!-- Pop-up -->
     <div id="popup" class="popup">
-        <p>Seu formulário foi enviado com sucesso!</p>
-        <button id="fechar" onclick="fecharPopup()">Fechar</button>
+        <p id="popup-text">Seu formulário foi enviado com sucesso!</p>
     </div>
-    
-    <script>
-        function validarForm() {
-            // Lógica de validação do formulário aqui
-            // ...
-
-            // Exibe o pop-up se o formulário for válido
-            mostrarPopup(event);
-            return false; // Impede o envio do formulário
-        }
-
-        function mostrarPopup(event) {
-            event.preventDefault(); // Impede o envio do formulário
-            var popup = document.getElementById("popup");
-            popup.style.display = "block";
-        }
-
-        function fecharPopup() {
-            var popup = document.getElementById("popup");
-            popup.style.display = "none";
-        }
-    </script>
 </body>
 </html>
